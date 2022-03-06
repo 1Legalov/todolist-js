@@ -17,6 +17,7 @@ function createTask(value) {
   removebtn.classList.add('remove')
   removebtn.textContent = 'Удалить'
   removebtn.addEventListener('click', removeTask)
+  
 
   task.append(taskText);
   task.append(checkbox);
@@ -24,6 +25,16 @@ function createTask(value) {
 
   return task;
 }
+
+field.addEventListener('keyup', enterTask)
+
+function enterTask(event) {
+  if(event.code == 'Enter'){
+    addTask();
+  }
+  
+}
+
 
 
 
@@ -66,3 +77,11 @@ function addTask() {
 }
 
 btn.addEventListener("click", addTask);
+
+
+// field.addEventListener("keypress", (keyPressed) => {
+//   const keyEnter = 13;
+//   if (keyPressed.which == keyEnter) {
+//     addTask();
+//   }
+// });
