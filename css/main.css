@@ -1,3 +1,51 @@
-.completed{
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: aqua ;
+
+
+}
+
+.field {
+  margin-bottom: 10px;
+
+}
+.remove {
+  border: 0;
+  border-radius: 15px;
+  color: red;
+    cursor: pointer;
+
+}
+.list {
+display: flex;
+flex-direction: column;
+gap:10px;
+
+
+
+}
+
+.task  {
+margin-right: 10px;
+color: #5c5c5c;
+cursor: default;
+
+}
+.task:hover  {
+  color: #47cf08;
+ 
+}
+.checkbox{
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.completed {
   text-decoration: line-through;
 }

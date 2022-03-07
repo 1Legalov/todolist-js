@@ -7,10 +7,12 @@ function createTask(value) {
   task.addEventListener("click", completeTask);
 
   const taskText = document.createElement("span");
+  taskText.classList.add('task')
   taskText.textContent = value;
 
   const checkbox = document.createElement("input");
   checkbox.setAttribute("type", "checkbox");
+  checkbox.classList.add('checkbox')
 
   const removebtn = document.createElement('button')
   removebtn.setAttribute('type', 'button')
